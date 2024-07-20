@@ -1,0 +1,3 @@
+- npm expo start (inicia el proyecto)
+- npx remove-console-msg make-them-go (borra los // console.log y .error para mas rendimiento)
+- npx eas build -p android (crea un apk (se supone))

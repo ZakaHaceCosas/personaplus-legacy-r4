@@ -1,15 +1,24 @@
 {
   "expo": {
-    "name": "personaplus",
+    "name": "PersonaPlus",
+    "description": "Dale un PLUS a tu persona",
     "slug": "personaplus",
-    "version": "1.0.0",
+    "owner": "zakahacecosas",
+    "privacy": "unlisted",
+    "version": "0.0.1-R4",
+    "githubUrl": "https://github.com/ZakaHaceCosas/personaplus",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#14171C"
+    },
+    "notification": {
+      "color": "#32FF80",
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "Hey! #{unread_notifications} PersonaPlus notifications!"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,11 +29,48 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#0E1013"
+      },
+      "allowBackup": false,
+      "package": "com.zakahacecosas.personaplus"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./fonts/BeVietnamPro-Black.ttf",
+            "./fonts/BeVietnamPro-BlackItalic.ttf",
+            "./fonts/BeVietnamPro-ExtraBold.ttf",
+            "./fonts/BeVietnamPro-ExtraBoldItalic.ttf",
+            "./fonts/BeVietnamPro-Bold.ttf",
+            "./fonts/BeVietnamPro-BoldItalic.ttf",
+            "./fonts/BeVietnamPro-SemiBold.ttf",
+            "./fonts/BeVietnamPro-SemiBoldItalic.ttf",
+            "./fonts/BeVietnamPro-Medium.ttf",
+            "./fonts/BeVietnamPro-MediumItalic.ttf",
+            "./fonts/BeVietnamPro-Regular.ttf",
+            "./fonts/BeVietnamPro-Italic.ttf",
+            "./fonts/BeVietnamPro-Light.ttf",
+            "./fonts/BeVietnamPro-LightItalic.ttf",
+            "./fonts/BeVietnamPro-ExtraLight.ttf",
+            "./fonts/BeVietnamPro-ExtraLightItalic.ttf",
+            "./fonts/BeVietnamPro-Thin.ttf",
+            "./fonts/BeVietnamPro-ThinItalic.ttf"
+          ]
+        }
+      ],
+      "expo-build-properties",
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5bbe1970-9882-4eee-aaf7-fffb23c7b2e1"
+      }
     }
   }
 }

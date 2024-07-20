@@ -1,0 +1,39 @@
+// PLANTILLA DE data.json
+//TODO
+
+{
+    "userData": {
+      "name": "Zaka",
+      "age": 69,
+      "locale": "ESP" // Can be ESP or ENG
+    },
+    "personaData": {
+        "weight": 420, //KG
+        "height": 190, //CM
+        "gender": 1, //1 - MALE, 2 - FEMALE, 3 - there are only two genders, bruh.
+        "alergies": null, //IF ANY, SAVE THEM AS A STRING 
+        "blood": "B" //BLOOD GROUP (Store as a "string" even if the group is a number (like 0))
+    },
+    "routines": {
+        "diet": {
+          "break": "09:15", // Time's are all set by the user.
+          "lunch": "15:20",
+          "dinner": "21:40",
+          "extras": {
+            "extra1":  {
+              "name": "merienda", // Custom name provided by the user.
+              "hour": "17:40" // Specified by the user.
+            }
+          }
+        },
+        "sport": {
+          "item1": {
+            "kind": "running",
+            "objs": {
+                "km": 10,
+                "t": 30 //TIME
+                }
+            }
+        }
+    }
+}
